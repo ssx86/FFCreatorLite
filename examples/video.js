@@ -31,6 +31,8 @@ const createFFTask = () => {
     clipEndTime: 3,
     appearTime: 0,
     duration: 3,
+    width: 100,
+    height: 100,
   });
   scene1.addChild(fvideo1);
 
@@ -41,6 +43,8 @@ const createFFTask = () => {
     clipEndTime: 3.001,
     appearTime: 3,
     duration: 6,
+    width: 100,
+    height: 100,
   });
   scene1.addChild(fvideo2);
 
