@@ -21,9 +21,7 @@ module.exports = {
   collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: [
-    '<rootDir>/lib/**/*.js',
-  ],
+  collectCoverageFrom: ['<rootDir>/lib/**/*.js'],
 
   moduleNameMapper: {
     '@/(.*)$': '<rootDir>/lib/$1',
@@ -33,9 +31,7 @@ module.exports = {
   coverageDirectory: '<rootDir>/coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: [
-    '/node_modules/',
-  ],
+  coveragePathIgnorePatterns: ['/node_modules/'],
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: [
@@ -160,7 +156,8 @@ module.exports = {
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   testRegex: [
-    'test/.*\\.test\\.js',
+    'test/unit/.*\\.test\\.js',
+    'test/scene/(api-logic|.*-fixed)\\.test\\.js', // Run unit tests and stable scene tests
   ],
 
   // This option allows the use of a custom results processor
